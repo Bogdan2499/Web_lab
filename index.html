@@ -4,35 +4,54 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="home.html">Головна</a></li>
-        <li>
-          <a href="products.html">Студентам <span class="caret"></span></a>
-          <div>
-            <ul>
-              <li><a href="products.html#chair">Програма</a></li>
-              <li><a href="products.html#table">Лабораторні</a></li>
-              <li><a href="cooker.html">Література</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="about.html">Відгуки</a></li>
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#band">Новини</a></li>
+        <li><a href="#tour">Відгуки</a></li>
+        <li><a href="admin.html">Адмін</a></li>
         <li><a href="contacts.html">Контакти</a></li>
-        <li><a href="about.html">Новини</a></li>
-          <li><a href="admin.html">Адмін</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Студентам
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Програма</a></li>
+            <li><a href="#">Лабораторні</a></li>
+            <li><a href="#">Література</a></li>
+          </ul>
+        </li>
+
       </ul>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+
     <div class="title expandUp">
       <h1 id="title">Проблеми судового захисту <br> в цивільному судочинстві</h1>
       <h3 id="subtitle">Доц. Богдан Й. Г.</h3>
 
     </div>
-  </header>
 
   <div class="info">
     <h1 id="about">Про предмет</h1>
@@ -73,6 +92,10 @@
       <div id="footer-logo"></div>
     </div>
   </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
